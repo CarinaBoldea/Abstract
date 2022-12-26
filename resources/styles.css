@@ -1,0 +1,90 @@
+@font-face {
+  font-family: "GT America";
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+  font-named-instance: "Regular";
+  src: url("./GT America Regular.ttf") format("ttf");
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "GT America Regular", sans-serif;
+  font-size: 20px;
+  line-height: 1.5em;
+}
+
+body {
+  display: block;
+  min-height: 100vh;
+  margin: 0;
+  color: #191a1b;
+  background-color: #191a1b;
+  text-rendering: optimizeSpeed;
+}
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+strong {
+  font-weight: 900;
+}
+
+a {
+  color: #fff;
+}
+
+a:hover {
+  color: #fff;
+}
+
+.screen-readers {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1.5rem;
+}
+
+.logo-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.abstract-logo {
+  height: 2rem;
+  width: 8.3rem;
+}
+
+.help-center {
+  margin-left: 1rem;
+}
+
+.sign-in {
+  margin-left: 1rem;
+}/*# sourceMappingURL=styles.css.map */
