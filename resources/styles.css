@@ -57,9 +57,15 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 1.5rem 2.5rem;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
+  margin: 1rem 1rem;
+  position: relative;
+}
+@media (min-width: 1200px) {
+  .header {
+    margin: 0.5rem 2.5rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
 }
 
 .logo-wrapper {
@@ -67,9 +73,15 @@ a:hover {
   align-items: center;
 }
 
+.logo-abstract {
+  display: block;
+  height: 1.7rem;
+  width: 7rem;
+}
+
 .help-center {
   margin-left: 1rem;
-  font-size: 24px;
+  font-size: 20px;
   text-decoration: none;
   letter-spacing: -0.5px;
   padding: 2px 0 4px 0.8rem;
@@ -78,17 +90,39 @@ a:hover {
 .help-center:hover {
   text-decoration: underline;
 }
-
-.menu-container {
-  display: flex;
-  align-items: center;
+@media (min-width: 400px) {
+  .help-center {
+    font-size: 24px;
+  }
 }
 
 .main-menu-list {
-  display: flex;
+  display: none;
 }
 .main-menu-list.active {
-  background: red;
+  display: block;
+  width: 100%;
+  top: 2rem;
+  left: 0;
+  font-size: 24px;
+  position: absolute;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+}
+@media (min-width: 1200px) {
+  .main-menu-list {
+    display: flex;
+  }
+}
+
+.main-menu-item {
+  margin: 1.5rem 1rem;
+  display: flex;
+  justify-content: center;
+}
+@media (min-width: 1200px) {
+  .main-menu-item {
+    margin: 0;
+  }
 }
 
 .button {
@@ -104,6 +138,10 @@ a:hover {
   }
 }
 
+.submit-request {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  padding-bottom: 1rem;
+}
 @media (min-width: 1200px) {
   .submit-request {
     border: 1px solid #fff;
@@ -122,13 +160,19 @@ a:hover {
   }
 }
 
-.trigger-button {
-  background: transparent;
-  display: none;
-  border: none;
+.trigger-menu {
+  display: block;
+  height: 2rem;
+  width: 2rem;
 }
-@media (max-width: 1200px) {
+
+.trigger-button {
+  display: block;
+  border: none;
+  background: transparent;
+}
+@media (min-width: 1200px) {
   .trigger-button {
-    display: block;
+    display: none;
   }
 }/*# sourceMappingURL=styles.css.map */
