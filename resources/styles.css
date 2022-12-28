@@ -16,6 +16,7 @@ html {
   font-family: "GT America Regular", sans-serif;
   font-size: 20px;
   line-height: 1.5em;
+  font-weight: 400;
 }
 
 body {
@@ -52,23 +53,13 @@ a:hover {
   color: #fff;
 }
 
-.screen-readers {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  white-space: nowrap;
-  border-width: 0;
-}
-
 .header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 1.5rem;
+  margin: 1.5rem 2.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 
 .logo-wrapper {
@@ -76,15 +67,68 @@ a:hover {
   align-items: center;
 }
 
-.abstract-logo {
-  height: 2rem;
-  width: 8.3rem;
-}
-
 .help-center {
   margin-left: 1rem;
+  font-size: 24px;
+  text-decoration: none;
+  letter-spacing: -0.5px;
+  padding: 2px 0 4px 0.8rem;
+  border-left: 2px solid #fff;
+}
+.help-center:hover {
+  text-decoration: underline;
 }
 
-.sign-in {
-  margin-left: 1rem;
+.menu-container {
+  display: flex;
+  align-items: center;
+}
+
+.main-menu-list {
+  display: flex;
+}
+.main-menu-list.active {
+  background: red;
+}
+
+.button {
+  text-decoration: none;
+  background: transparent;
+  cursor: pointer;
+}
+@media (min-width: 1200px) {
+  .button {
+    font-size: 24px;
+    border-radius: 8px;
+    margin-left: 1rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .submit-request {
+    border: 1px solid #fff;
+    padding: 0.5rem 1.1rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .sign-in {
+    background: #4c5fd5;
+    padding: 0.5rem 1.6rem;
+  }
+  .sign-in:hover {
+    color: #000;
+    background: #fff;
+  }
+}
+
+.trigger-button {
+  background: transparent;
+  display: none;
+  border: none;
+}
+@media (max-width: 1200px) {
+  .trigger-button {
+    display: block;
+  }
 }/*# sourceMappingURL=styles.css.map */

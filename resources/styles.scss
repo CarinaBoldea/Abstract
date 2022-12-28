@@ -1,13 +1,13 @@
 @charset "UTF-8";
 
 @font-face {
-    font-family: "GT America";
-    font-weight: 400;
-    font-display: swap;
-    font-style: normal;
-    font-named-instance: "Regular";
-    src: url("./GT America Regular.ttf") format("ttf");
-  }
+  font-family: "GT America";
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+  font-named-instance: "Regular";
+  src: url("./GT America Regular.ttf") format("ttf");
+}
 
 *,
 *::before,
@@ -19,6 +19,7 @@ html {
   font-family: "GT America Regular", sans-serif;
   font-size: 20px;
   line-height: 1.5em;
+  font-weight: 400;
 }
 
 body {
@@ -54,52 +55,93 @@ a:hover {
   color: #fff;
 }
 
-.screen-readers {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  white-space: nowrap;
-  border-width: 0;
+.container {
 }
 
-.container{
-
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1.5rem 2.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 
-.header{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 1.5rem;
+.logo-wrapper {
+  display: flex;
+  align-items: center;
 }
 
-.logo-wrapper{
-    display: flex;
-    align-items: center;
+.logo-abstarct {
 }
 
-.logo{}
-
-.abstract-logo{
-    height: 2rem;
-    width: 8.3rem;
+.help-center {
+  margin-left: 1rem;
+  font-size: 24px;
+  text-decoration: none;
+  letter-spacing: -0.5px;
+  padding: 2px 0 4px 0.8rem;
+  border-left: 2px solid #fff;
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
-.help-center{
+.menu-container {
+  display: flex;
+  align-items: center;
+}
+
+.main-menu-list {
+  display: flex;
+  &.active {
+    background: red;
+  }
+}
+
+.main-menu-item {
+}
+
+.button {
+  text-decoration: none;
+  background: transparent;
+  cursor: pointer;
+  @media (min-width: 1200px) {
+    font-size: 24px;
+    border-radius: 8px;
     margin-left: 1rem;
+  }
 }
 
-.controls-container{
-
+.submit-request {
+  @media (min-width: 1200px) {
+    border: 1px solid #fff;
+    padding: 0.5rem 1.1rem;
+  }
 }
-.button{}
 
-.submit-request{}
+.sign-in {
+  @media (min-width: 1200px) {
+    background: #4c5fd5;
+    padding: 0.5rem 1.6rem;
+    &:hover {
+      color: #000;
+      background: #fff;
+    }
+  }
+}
 
-.sign-in{
-    margin-left: 1rem;
+.trigger-menu {
+}
+
+.trigger-button {
+  background: transparent;
+  display: none;
+  border: none;
+  @media (max-width: 1200px) {
+    display: block;
+  }
+}
+
+.menu-trigger {
 }
