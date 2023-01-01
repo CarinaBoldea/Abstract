@@ -235,6 +235,7 @@ a:hover {
 .category-section {
   background: #fff;
   width: 100%;
+  padding-bottom: 2rem;
 }
 
 .category-grid-list {
@@ -289,4 +290,70 @@ a:hover {
 .category-item-link:hover {
   color: #4c5fd5;
   text-decoration: underline;
+}
+
+.footer {
+  display: block;
+  color: #fff;
+}
+
+.footer-container {
+  margin: 1rem 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "abstract resources" "community company" "copyright copyright";
+}
+@media (min-width: 990px) {
+  .footer-container {
+    margin: 1rem 4rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "abstract resources community company" "copyright copyright copyright copyright";
+  }
+}
+
+.footer-abstract {
+  grid-area: abstract;
+}
+
+.footer-resources {
+  grid-area: resources;
+}
+
+.footer-community {
+  grid-area: community;
+}
+
+.footer-company {
+  grid-area: company;
+}
+
+.footer-copy {
+  grid-area: copyright;
+}
+
+.footer-title {
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.footer-links-list {
+  padding: 0;
+}
+
+.footer-links-item {
+  display: block;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.footer-link {
+  text-decoration: none;
+}
+.footer-link:hover {
+  text-decoration: underline;
+}
+
+.copy-paragraph {
+  margin: 0;
 }/*# sourceMappingURL=styles.css.map */
